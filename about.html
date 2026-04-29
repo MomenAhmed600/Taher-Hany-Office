@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مكتب النخبة للمحاماة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-[#fdfcfb] text-slate-900">
+    <nav class="fixed w-full z-[1000] py-4 bg-white border-b-2 border-[#001f3f] shadow-lg">
+      <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="flex items-center gap-3">
+            <img src="./img/logo.png" alt="Logo" class="h-[60px] w-auto" />
+            <div class="leading-none">
+              <h1 class="text-[#0f172a] text-xl font-extrabold uppercase tracking-tight" data-i18n="logo">طاهر&هاني</h1>
+              <p class="text-gold text-[9px] uppercase tracking-[0.2em] font-bold mt-1" data-i18n="logo-2">المكتب القانوني</p>
+            </div>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest">
+          <a href="index.html" data-i18n="m-home" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">الرئيسية</a>
+          <a href="areas.html" data-i18n="m-Areas" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">المجالات</a>
+          <a href="services.html" data-i18n="m-services" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">خدماتنا</a>
+          <a href="team.html" data-i18n="m-team" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">الفريق</a>
+          <a href="about.html" data-i18n="m-about" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">من نحن</a>
+          <a href="contact.html" data-i18n="m-contact" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">اتصل بنا</a>
+          <button onclick="toggleLanguage()" id="lang-btn" class="bg-[#001f3f] text-white px-3 py-2 rounded-md text-md font-semibold hover:bg-white hover:text-[#001f3f] border-2 border-[#001f3f] transition-all duration-300">English</button>
+        </div>
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-[#001f3f] text-2xl"><i class="fas fa-bars-staggered"></i></button>
+      </div>
+
+      <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gold/20 flex flex-col p-6 gap-4 shadow-2xl">
+  <a href="index.html" class="text-start font-bold" data-i18n="m-home">الرئيسية</a>
+  <a href="areas.html" class="text-start font-bold" data-i18n="m-Areas">المجالات</a>
+  <a href="services.html" class="text-start font-bold" data-i18n="m-services">خدماتنا</a>
+  <a href="team.html" class="text-start font-bold" data-i18n="m-team">فريق العمل</a>
+  <a href="about.html" class="text-start font-bold" data-i18n="m-about">من نحن</a>
+  <a href="contact.html" class="text-start font-bold" data-i18n="m-contact">اتصل بنا</a>
+  <button onclick="toggleLanguage(); toggleMobileMenu();" class="bg-[#001f3f] text-white py-2 rounded mt-2">English / العربية</button>
+</div>
+    </nav>
+
+    <main class="pt-20">
+<section class="py-24 px-6 bg-slate-50">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-5xl font-bold text-[#0f172a] mb-12 serif-title" data-i18n="about_title">من نحن</h2>
+    <div class="space-y-6">
+        <p class="text-2xl text-[#154c80] font-medium leading-relaxed italic" data-i18n="about_intro_quote">
+          "نحن لا نقدم مجرد استشارات قانونية، بل نبني جسوراً من الثقة والعدالة."
+        </p>
+        <p class="text-xl text-slate-600 leading-loose" data-i18n="about_p1">
+          تأسس مكتبنا ليكون منارة للعدالة في قلب المجتمع القانوني، حيث نجمع بين الخبرة العريقة في المحاكم والحلول القانونية المبتكرة التي تناسب العصر الحديث. نلتزم بحماية مصالح موكلينا بأقصى درجات النزاهة والاحترافية.
+        </p>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 px-6 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-slate-900 mb-4" data-i18n="val_main_title">قيمنا وخدماتنا</h2>
+        <div class="w-20 h-1 bg-[#b48c36] mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-md transition bg-white text-center group">
+        <div class="w-16 h-16 bg-[#b48c36]/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#b48c36] transition duration-300">
+            <svg class="w-8 h-8 text-[#001f3f] group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-4" data-i18n="val1_title">حماية قانونية</h3>
+        <p class="text-slate-600 leading-relaxed" data-i18n="val1_desc">نوفر درعاً قانونياً قوياً لمصالحك التجارية والشخصية ضد كافة المخاطر.</p>
+      </div>
+
+      <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-md transition bg-white text-center group">
+        <div class="w-16 h-16 bg-[#b48c36]/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#b48c36] transition duration-300">
+            <svg class="w-8 h-8 text-[#001f3f] group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-4" data-i18n="val2_title">استجابة سريعة</h3>
+        <p class="text-slate-600 leading-relaxed" data-i18n="val2_desc">ندرك أهمية الوقت في القانون، لذلك نضمن الرد والتحرك الفوري لقضاياكم.</p>
+      </div>
+
+      <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-md transition bg-white text-center group">
+        <div class="w-16 h-16 bg-[#b48c36]/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#b48c36] transition duration-300">
+            <svg class="w-8 h-8 text-[#001f3f] group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-4" data-i18n="val3_title">فريق متخصص</h3>
+        <p class="text-slate-600 leading-relaxed" data-i18n="val3_desc">نخبة من المحامين المتخصصين في مختلف فروع القانون لضمان أفضل النتائج.</p>
+      </div>
+  </div>
+</section>
+        </main>
+
+     <footer
+      class="bg-[#001f3f] text-white shadow-[0_-3px_10px_rgba(0,0,0,0.2)]"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 pt-10 pb-16 grid grid-cols-2 md:grid-cols-4 gap-10"
+      >
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="./img/logo-foot.png" alt="Logo" class="h-10 w-auto" />
+            <div class="leading-none">
+              <h1
+                class="text-[#fff] text-xl font-extrabold uppercase tracking-tight"
+                data-i18n="logo"
+              >
+                طاهر&هاني
+              </h1>
+              <p
+                class="text-gold text-[9px] uppercase tracking-[0.2em] font-bold mt-1"
+                data-i18n="logo-2"
+              >
+                المكتب القانوني
+              </p>
+            </div>
+          </div>
+          <p class="text-gray-300 md:ml-3" data-i18n="f-brand-desc">
+            Taste the finest coffee, freshly roasted for you.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="text-xl font-semibold mb-4" data-i18n="f-links-title">
+            Quick Links
+          </h5>
+          <ul class="space-y-2">
+  <li><a href="areas.html" data-i18n="m-Areas">المجالات</a></li>
+  <li><a href="services.html" data-i18n="m-services">خدماتنا</a></li>
+  <li><a href="team.html" data-i18n="m-team">الفريق</a></li>
+  <li><a href="about.html" data-i18n="m-about">من نحن</a></li>
+  <li><a href="contact.html" data-i18n="m-contact">اتصل بنا</a></li>
+</ul>
+        </div>
+
+        <div>
+          <h5 class="text-xl font-semibold mb-4" data-i18n="f-follow-title">
+            Follow Us
+          </h5>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="https://www.facebook.com/people/TAHER-HANY-Law-firm/61585816301440/"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-blue-400 transition-colors"
+                data-i18n="f-follow-title-fb"
+              >
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/blancocafeandplaystion/"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-pink-400 transition-colors"
+                data-i18n="f-follow-title-in"
+              >
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mohamed-hany-54b045147/"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-blue-400 transition-colors"
+                data-i18n="f-follow-title-linkedin"
+              >
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/201208636227"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-green-500 transition-colors"
+                data-i18n="f-follow-title-whatsapp"
+              >
+                <span>WhatsApp</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:info@taher-hanylawfirm.com"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-gray-400 transition-colors"
+                data-i18n="f-follow-title-email"
+              >
+                <span>Email</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5
+            class="text-xl font-semibold mb-4 uppercase"
+            data-i18n="f-location-title"
+          >
+            Alexandria
+          </h5>
+          <ul class="space-y-2">
+            <li>
+              <a
+                class="hover:text-blue-300 transition-colors"
+                data-i18n="f-location-area"
+              >
+                SMOUHA
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="bg-black/30 border-t border-white/10 py-4 text-white/80 text-sm"
+      >
+        <div class="flex items-center justify-center gap-2" dir="ltr">
+          <span>© Copy Right 2026 - All Reserved By</span>
+
+          <a
+            href="https://www.momenahmed.net"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gold font-bold underline cursor-pointer hover:text-white transition-colors"
+          >
+            Mo'men Ahmed
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
