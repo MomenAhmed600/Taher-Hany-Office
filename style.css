@@ -11,19 +11,35 @@
 [dir="rtl"] .rtl\:order-2 {
   order: 2 !important;
 }
+* {
+  font-family: "Cairo", sans-serif;
+}
 
-[lang="ar"] {
+/* الكود ده بيمنع تطبيق خط كايرو على أي أيقونة */
+/* تعديل الكود ليتناسب مع الإصدار السادس الذي تستخدمه */
+i[class^="fa-"],
+i[class*=" fa-"],
+.fa,
+.fas,
+.fab,
+.fa-brands, /* إضافة كلاس البراندات */
+.fa-solid {
+  /* إضافة كلاس السوليد */
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  font-weight: 900;
+}
+/* [lang="ar"] {
   font-family: "Tajawal", sans-serif;
 }
 [lang="en"] {
-  font-family: "Inter", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .serif-title {
   font-family: "Amiri", serif;
 }
 [lang="en"] .serif-title {
   font-family: "Playfair Display", serif;
-}
+} */
 
 .bg-navy {
   background-color: var(--navy);

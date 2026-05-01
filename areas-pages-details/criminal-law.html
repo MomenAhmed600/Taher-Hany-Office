@@ -5,116 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taher&Hany Law Office</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-<style> body { font-family: 'Cairo', sans-serif; } </style>
-<link rel="stylesheet" href="../style.css" />
-<link rel="icon" href="./img/logo-ficon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="./img/logo-ficon.png" />
   </head>
 
   <body class="bg-[#fdfcfb] text-slate-900">
-    <nav class="fixed w-full z-[1000] py-4 bg-white border-b-2 border-[#001f3f] shadow-lg">
+    <nav
+      class="fixed w-full z-[1000] py-4 bg-white border-b-2 border-[#001f3f] shadow-lg"
+    >
       <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="../index.html" class="flex items-center gap-3">
           <div class="flex items-center gap-3">
             <img src="../img/logo.png" alt="Logo" class="h-[60px] w-auto" />
             <div class="leading-none">
-              <h1 class="text-[#0f172a] text-xl font-extrabold uppercase tracking-tight" data-i18n="logo">طاهر&هاني</h1>
-              <p class="text-gold text-[9px] uppercase tracking-[0.2em] font-bold mt-1" data-i18n="logo-2">المكتب القانوني</p>
+              <h1
+                class="text-[#0f172a] text-xl font-extrabold uppercase tracking-tight"
+                data-i18n="logo"
+              >
+                طاهر&هاني
+              </h1>
+              <p
+                class="text-gold text-[9px] uppercase tracking-[0.2em] font-bold mt-1"
+                data-i18n="logo-2"
+              >
+                المكتب القانوني
+              </p>
             </div>
           </div>
         </a>
-        <div class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest">
-          <a href="../index.html" data-i18n="m-home" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">الرئيسية</a>
-          <a href="../areas.html" data-i18n="m-Areas" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">المجالات</a>
-          <a href="../services.html" data-i18n="m-services" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">خدماتنا</a>
-          <a href="../team.html" data-i18n="m-team" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">الفريق</a>
-          <a href="../about.html" data-i18n="m-about" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">من نحن</a>
-          <a href="../contact.html" data-i18n="m-contact" class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md">اتصل بنا</a>
-          <button onclick="toggleLanguage()" id="lang-btn" class="bg-[#001f3f] text-white px-3 py-2 rounded-md text-md font-semibold hover:bg-white hover:text-[#001f3f] border-2 border-[#001f3f] transition-all duration-300">English</button>
+        <div
+          class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest"
+        >
+          <a
+            href="../index.html"
+            data-i18n="m-home"
+            class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
+            >الرئيسية</a
+          >
+          <a
+            href="../areas.html"
+            data-i18n="m-Areas"
+            class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
+            >المجالات</a
+          >
+          <a
+            href="../services.html"
+            data-i18n="m-services"
+            class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
+            >خدماتنا</a
+          >
+          <a
+            href="../team.html"
+            data-i18n="m-team"
+            class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
+            >الفريق</a
+          >
+          <a
+            href="../about.html"
+            data-i18n="m-about"
+            class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
+            >من نحن</a
+          >
+          <a
+            href="../contact.html"
+            data-i18n="m-contact"
+            class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
+            >اتصل بنا</a
+          >
+          <button
+            onclick="toggleLanguage()"
+            id="lang-btn"
+            class="bg-[#001f3f] text-white px-3 py-2 rounded-md text-md font-semibold hover:bg-white hover:text-[#001f3f] border-2 border-[#001f3f] transition-all duration-300"
+          >
+            English
+          </button>
         </div>
-        <button onclick="toggleMobileMenu()" class="lg:hidden text-[#001f3f] text-2xl"><i class="fas fa-bars-staggered"></i></button>
+        <button
+          onclick="toggleMobileMenu()"
+          class="lg:hidden text-[#001f3f] text-2xl"
+        >
+          <i class="fas fa-bars-staggered"></i>
+        </button>
       </div>
 
-      <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gold/20 flex flex-col p-6 gap-4 shadow-2xl">
-        <a href="../index.html" class="text-start font-bold" data-i18n="m-home">الرئيسية</a>
-        <a href="../areas.html" class="text-start font-bold" data-i18n="m-Areas">المجالات</a>
-        <a href="../services.html" class="text-start font-bold" data-i18n="m-services">خدماتنا</a>
-        <a href="../team.html" class="text-start font-bold" data-i18n="m-team">فريق العمل</a>
-        <a href="../about.html" class="text-start font-bold" data-i18n="m-about">من نحن</a>
-        <a href="../contact.html" class="text-start font-bold" data-i18n="m-contact">اتصل بنا</a>
-        <button onclick="toggleLanguage(); toggleMobileMenu();" class="bg-[#001f3f] text-white py-2 rounded mt-2">English / العربية</button>
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden bg-white border-t border-gold/20 flex flex-col p-6 gap-4 shadow-2xl"
+      >
+        <a href="../index.html" class="text-start font-bold" data-i18n="m-home"
+          >الرئيسية</a
+        >
+        <a href="../areas.html" class="text-start font-bold" data-i18n="m-Areas"
+          >المجالات</a
+        >
+        <a
+          href="../services.html"
+          class="text-start font-bold"
+          data-i18n="m-services"
+          >خدماتنا</a
+        >
+        <a href="../team.html" class="text-start font-bold" data-i18n="m-team"
+          >فريق العمل</a
+        >
+        <a href="../about.html" class="text-start font-bold" data-i18n="m-about"
+          >من نحن</a
+        >
+        <a
+          href="../contact.html"
+          class="text-start font-bold"
+          data-i18n="m-contact"
+          >اتصل بنا</a
+        >
+        <button
+          onclick="
+            toggleLanguage();
+            toggleMobileMenu();
+          "
+          class="bg-[#001f3f] text-white py-2 rounded mt-2"
+        >
+          English / العربية
+        </button>
       </div>
     </nav>
 
     <main class="pt-20">
       <section class="relative h-[40vh] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
+        <img
+          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center"
+        >
           <div class="text-center text-white">
-            <h1 class="text-4xl md:text-6xl font-black mb-4 serif-title" data-i18n="area-criminal-t">القانون الجنائي</h1>
+            <h1
+              class="text-4xl md:text-6xl font-black mb-4 serif-title"
+              data-i18n="area-criminal-t"
+            >
+              القانون الجنائي
+            </h1>
             <div class="w-20 h-1 bg-gold mx-auto"></div>
           </div>
         </div>
       </section>
 
-      <section class="py-20 px-6 max-w-7xl mx-auto min-h-[80vh] flex items-center">
-  <div class="flex flex-col lg:flex-row lg:items-center gap-16 w-full">
-    
-    <div class="w-full lg:w-1/2 order-1 lg:order-1 rtl:lg:order-2">
-      <div class="relative group">
-        <div
-          class="absolute -inset-4 border-2 border-gold/20 rounded-xl translate-x-4 translate-y-4 -z-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"
-        ></div>
-        <img
-          src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1000"
-          class="w-full h-[300px] lg:h-[500px] object-cover rounded-xl shadow-2xl transition-all duration-500"
-        />
-      </div>
-    </div>
+      <section
+        class="py-20 px-6 max-w-7xl mx-auto min-h-[80vh] flex items-center"
+      >
+        <div class="flex flex-col lg:flex-row lg:items-center gap-16 w-full">
+          <div class="w-full lg:w-1/2 order-1 lg:order-1 rtl:lg:order-2">
+            <div class="relative group">
+              <div
+                class="absolute -inset-4 border-2 border-gold/20 rounded-xl translate-x-4 translate-y-4 -z-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1000"
+                class="w-full h-[300px] lg:h-[500px] object-cover rounded-xl shadow-2xl transition-all duration-500"
+              />
+            </div>
+          </div>
 
-    <div class="w-full lg:w-1/2 flex flex-col gap-6 order-2 lg:order-2 rtl:lg:order-1 text-start" id="text-content-wrapper">
-      
-      <div class="">
-        <span class="text-gold/60 text-sm font-medium tracking-[0.2em] uppercase">10/21/25</span>
-      </div>
+          <div
+            class="w-full lg:w-1/2 flex flex-col gap-6 order-2 lg:order-2 rtl:lg:order-1 text-start"
+            id="text-content-wrapper"
+          >
+            <div class="">
+              <span
+                class="text-gold/60 text-sm font-medium tracking-[0.2em] uppercase"
+                >10/21/25</span
+              >
+            </div>
 
-      <h1 class="text-4xl lg:text-6xl font-medium text-navy leading-[1.1] serif-title mb-2 transition-all duration-700 ease-in-out" data-i18n="det-about-t">
-        The Evolution of Law: Professional Criminal Defense
-      </h1>
+            <h1
+              class="text-4xl lg:text-6xl font-medium text-navy leading-[1.1] serif-title mb-2 transition-all duration-700 ease-in-out"
+              data-i18n="det-about-t"
+            >
+              The Evolution of Law: Professional Criminal Defense
+            </h1>
 
-      
+            <div class="">
+              <button
+                onclick="toggleReadMore(this)"
+                class="group flex items-center gap-4 text-navy font-bold text-sm uppercase tracking-widest border-b border-navy/20 pb-2 hover:border-gold transition-all"
+              >
+                <span class="btn-text" data-i18n="read-more">Read More</span>
+                <i
+                  class="fas fa-arrow-right text-xs group-hover:translate-x-2 transition-transform duration-500"
+                ></i>
+              </button>
+            </div>
 
-      <div class="">
-        <button
-          onclick="toggleReadMore(this)"
-          class="group flex items-center gap-4 text-navy font-bold text-sm uppercase tracking-widest border-b border-navy/20 pb-2 hover:border-gold transition-all"
-        >
-          <span class="btn-text" data-i18n="read-more">Read More</span>
-          <i class="fas fa-arrow-right text-xs group-hover:translate-x-2 transition-transform duration-500"></i>
-        </button>
-      </div>
-
-      <div class="card-details max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out">
-        <div class="">
-           <h3 class="text-navy font-bold mb-4" data-i18n="det-services-t">خدماتنا تشمل:</h3>
-           <ul class="space-y-3 text-slate-600">
-              <li class="flex items-center gap-3">
-                <p id="main-description" class="text-slate-500 text-lg lg:text-xl leading-relaxed max-w-xl transition-all duration-700 ease-in-out" data-i18n="det-about-d">
-        نقدم في مكتبنا خدمات دفاع جنائي متميزة، نجمع فيها بين الإرث القانوني العريق والحلول العصرية لحماية حقوقكم.
-        
-      </p>
-              </li>
-           </ul>
+            <div
+              class="card-details max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out"
+            >
+              <div class="">
+                <h3 class="text-navy font-bold mb-4" data-i18n="det-services-t">
+                  خدماتنا تشمل:
+                </h3>
+                <ul class="space-y-3 text-slate-600">
+                  <li class="flex items-center gap-3">
+                    <p
+                      id="main-description"
+                      class="text-slate-500 text-lg lg:text-xl leading-relaxed max-w-xl transition-all duration-700 ease-in-out"
+                      data-i18n="det-about-d"
+                    >
+                      نقدم في مكتبنا خدمات دفاع جنائي متميزة، نجمع فيها بين
+                      الإرث القانوني العريق والحلول العصرية لحماية حقوقكم.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
     </main>
 
-     <footer
+    <footer
       class="bg-[#001f3f] text-white shadow-[0_-3px_10px_rgba(0,0,0,0.2)]"
     >
       <div
@@ -148,12 +263,16 @@
             Quick Links
           </h5>
           <ul class="space-y-2">
- <li><a href="../areas.html" data-i18n="m-Areas">المجالات</a></li>
-  <li><a href="../services.html" data-i18n="m-services">خدماتنا</a></li>
-  <li><a href="../team.html" data-i18n="m-team">الفريق</a></li>
-  <li><a href="../about.html" data-i18n="m-about">من نحن</a></li>
-  <li><a href="../contact.html" data-i18n="m-contact">اتصل بنا</a></li>
-</ul>
+            <li><a href="../areas.html" data-i18n="m-Areas">المجالات</a></li>
+            <li>
+              <a href="../services.html" data-i18n="m-services">خدماتنا</a>
+            </li>
+            <li><a href="../team.html" data-i18n="m-team">الفريق</a></li>
+            <li><a href="../about.html" data-i18n="m-about">من نحن</a></li>
+            <li>
+              <a href="../contact.html" data-i18n="m-contact">اتصل بنا</a>
+            </li>
+          </ul>
         </div>
 
         <div>
