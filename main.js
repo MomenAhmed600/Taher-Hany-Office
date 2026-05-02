@@ -113,6 +113,10 @@ const translations = {
       "نحن فريق من المحامين المتخصصين في مختلف فروع القانون، ونعمل بجدية لضمان أفضل النتائج لموكلينا.",
     about_p1:
       "مع أكثر من 25 عاماً من الخبرة في الإسكندرية، أصبح مكتبنا اسماً رائداً في صناعة القانون في المنطقة.  نحن نفخر بتاريخنا الحافل بالنجاحات والتزامنا الثابت بتقديم خدمات قانونية عالية الجودة لعملائنا في جميع أنحاء مصر وخارجها.",
+    contact_info: "بيانات التواصل",
+    postal_code: "الرمز البريدي",
+    phone_number: "رقم الهاتف",
+    landline: "الهاتف الأرضي",
   },
   en: {
     logo: "TAHER & HANY",
@@ -232,13 +236,17 @@ const translations = {
       "We are a team of lawyers specializing in various branches of law, working diligently to ensure the best outcomes for our clients.",
     about_p1:
       "With over 25 years of experience in Alexandria, our firm has established itself as a leading name in the legal industry.",
+    contact_info: "Contact Information",
+    postal_code: "Postal Code",
+    phone_number: "Phone Number",
+    landline: "Landline",
   },
 };
 
-// 1. استرجاع اللغة من المتصفح أو جعلها "ar" كافتراضي
+// 1.by default arabic language is selected, but if the user has a previous choice, we use it
 let currentLang = localStorage.getItem("userLang") || "ar";
 
-// --- وظيفة الترجمة ---
+// --- Function to apply translations ---
 function applyTranslations() {
   // ضبط اتجاه الصفحة واللغة في الـ HTML
   document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
@@ -251,7 +259,7 @@ function applyTranslations() {
     }
   });
 
-  // تحديث نص زر اللغة
+  // choice the language button text based on the current language
   const langBtn = document.getElementById("lang-btn");
   if (langBtn) {
     langBtn.textContent = currentLang === "ar" ? "English" : "العربية";
@@ -261,13 +269,13 @@ function applyTranslations() {
 window.toggleLanguage = function () {
   currentLang = currentLang === "ar" ? "en" : "ar";
 
-  // 2. حفظ اختيار المستخدم في المتصفح
+  // 2. save the user's choice in localStorage so it persists across sessions
   localStorage.setItem("userLang", currentLang);
 
   applyTranslations();
 };
 
-// --- القائمة المتنقلة (Mobile Menu) ---
+// --- (Mobile Menu) ---
 window.toggleMobileMenu = function () {
   const menu = document.getElementById("mobile-menu");
   if (menu) {
@@ -275,7 +283,7 @@ window.toggleMobileMenu = function () {
   }
 };
 
-// --- السلايد شو (Hero Carousel) ---
+// --- (Hero Carousel) ---
 let currentSlide = 0;
 
 window.moveCarousel = function (direction) {
@@ -287,14 +295,14 @@ window.moveCarousel = function (direction) {
   slides[currentSlide].classList.add("active");
 };
 
-// تشغيل تلقائي للسلايدر
+//  play the carousel automatically
 setInterval(() => {
   if (document.querySelector(".carousel-item")) {
     moveCarousel(1);
   }
 }, 4000);
 
-// --- تنفيذ الترجمة والتهيئات عند تحميل الصفحة ---
+// --- Initialize Translations ---
 document.addEventListener("DOMContentLoaded", () => {
   applyTranslations();
 
@@ -314,7 +322,6 @@ window.toggleAccordion = function (header) {
 };
 
 window.toggleReadMore = function (btn) {
-  // بنحدد الحاوية اللي فيها كل الشغل
   const container = btn.closest(".flex-col");
   const title = container.querySelector("h1");
   const description = container.querySelector("#main-description");
@@ -322,27 +329,25 @@ window.toggleReadMore = function (btn) {
   const icon = btn.querySelector("i");
   const btnText = btn.querySelector(".btn-text");
 
-  // بنشيك لو الكلاس موجود عشان نعرف الحالة (مفتوح ولا مقفول)
+  // toggle the expanded state
   const isExpanded = container.classList.toggle("expanded-state");
 
   if (isExpanded) {
-    // 1. العنوان يطلع لفوق
+    // 1. title is up
     title.style.transform = "translateY(-20px)";
-    title.style.color = "#b48c36"; // تغيير اللون للذهبي (اختياري للصياعة)
+    title.style.color = "#b48c36";
 
-    // 2. الوصف الأساسي يتحرك سنة برضه
     description.style.transform = "translateY(-10px)";
 
-    // 3. الكلام المخفي يظهر وينزل لتحت
     details.style.maxHeight = details.scrollHeight + "px";
     details.style.opacity = "1";
     details.style.marginTop = "1rem";
 
-    // 4. الأيقونة والنص
+    // 4. icon rotates 90 degrees
     icon.style.transform = "rotate(90deg)";
     btnText.textContent = currentLang === "ar" ? "عرض أقل" : "Show Less";
   } else {
-    // نرجع كل حاجة زي ما كانت
+    // 1. title back to normal
     title.style.transform = "translateY(0)";
     title.style.color = "";
     description.style.transform = "translateY(0)";
