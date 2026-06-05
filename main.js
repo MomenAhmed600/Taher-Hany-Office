@@ -1,6 +1,6 @@
 const translations = {
   ar: {
-    logo: "طاهر&هاني",
+    logo: "طاهر و هاني",
     "logo-2": "المكتب القانوني",
     "m-home": "الرئيسية",
     "m-about": "من نحن",
@@ -15,6 +15,7 @@ const translations = {
     "h2-d":
       "نرافق نمو أعمالكم بخطوات قانونية ثابتة، موفرين بيئة آمنة لاستثماراتكم.",
     "btn-consult": "احجز استشارة فورية",
+    "h4-home-title": "تأسس 1995",
     "a-title": "تاريخ من التميز والنزاهة",
     "st-1": "قضية ناجحة",
     "st-2": "سنة خبرة",
@@ -134,6 +135,7 @@ const translations = {
     "h2-d":
       "We accompany your business growth with firm legal steps, ensuring a safe environment for your investments.",
     "btn-consult": "Book Consultation",
+    "h4-home-title": "Established 1995",
     "a-title": "History of Excellence & Integrity",
     "st-1": "Successful Cases",
     "st-2": "Years Experience",
