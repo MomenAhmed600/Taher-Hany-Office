@@ -166,11 +166,53 @@ i[class*=" fa-"],
 }
 
 /* لما تكون اللغة عربي، طبق خط الرقعة على الـ h1 اللي جواه لوجو المكتب */
-html[lang="ar"] h1[data-i18n="logo"] {
+html[lang="ar"] h1[data-i18n="logo"],
+[data-i18n="h1-t"] {
   font-family: 'Aref Ruqaa', serif !important;
+}
+
+html[lang="ar"] [data-i18n="h1-d"],
+[data-i18n="h2-d"],
+[data-i18n="h3-d"] {
+  font-family: 'Cairo', sans-serif !important;
 }
 
 /* لما تكون اللغة إنجليزي، رجعه لخط كايرو عشان يظبط مع باقي الموقع */
 html[lang="en"] h1[data-i18n="logo"] {
   font-family: 'Cairo', sans-serif !important;
+}
+
+/* كود حركة شريط الشركات المتنقل دائمًا */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee2 {
+  animation: marquee2 25s linear infinite;
+}
+
+/* يقف الشريط مؤقتاً عند مرور الماوس عليه لشكل احترافي */
+.overflow-x-hidden:hover .animate-marquee,
+.overflow-x-hidden:hover .animate-marquee2 {
+  animation-play-state: paused;
 }

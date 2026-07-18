@@ -143,6 +143,7 @@
     <main class="pt-20">
       <section class="relative h-[75vh] overflow-hidden">
   <div id="hero-carousel">
+    <!-- السلايد الأول -->
     <div class="carousel-item active relative h-[75vh]">
       <img
         src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
@@ -150,16 +151,32 @@
       />
 
       <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
-        <div class="max-w-7xl mx-auto w-full text-white px-6">
+        <!-- أضفنا flex flex-col items-center هنا للتأكيد على التوسيط الدقيق -->
+        <div class="max-w-7xl mx-auto w-full text-white px-6 flex flex-col items-center text-center">
           <h2
-            class="text-center md:text-start text-4xl md:text-7xl font-black mb-6 serif-title leading-tight"
+            class="text-[#d4af37] text-2xl md:text-6xl font-black mb-7 serif-title leading-tight"
             data-i18n="h1-t"
           >
             سيادة القانون.. أمان لمستقبلكم
           </h2>
+          <!-- تم تعديل الـ margin هنا إلى mx-auto -->
           <p
-            class="text-center md:text-start mx-auto md:mx-0 text-xl md:text-2xl text-white/80 max-w-2xl mb-10 leading-relaxed"
+            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
             data-i18n="h1-d"
+          >
+            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+          </p>
+          <p
+            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+            data-i18n="h2-d"
+          >
+            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+          </p>
+          <p
+            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+            data-i18n="h3-d"
           >
             نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
             بخبرة تزيد عن 25 عاماً في المحافل الدولية.
@@ -168,6 +185,7 @@
       </div>
     </div>
 
+    <!-- السلايد الثاني -->
     <div class="carousel-item relative h-[75vh]">
       <img
         src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=2000"
@@ -175,16 +193,31 @@
       />
 
       <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
-        <div class="max-w-7xl mx-auto w-full text-white px-6">
+        <!-- تم تحويل التكست كله لـ center هنا برضه وتعديل الـ md:text-start القديمة -->
+        <div class="max-w-7xl mx-auto w-full text-white px-6 flex flex-col items-center text-center">
           <h2
-            class="text-center md:text-start text-4xl md:text-7xl font-black mb-6 serif-title leading-tight"
+            class="text-[#d4af37] text-2xl md:text-6xl font-black mb-6 serif-title leading-tight"
             data-i18n="h1-t"
           >
             سيادة القانون.. أمان لمستقبلكم
           </h2>
           <p
-            class="text-center md:text-start mx-auto md:mx-0 text-xl md:text-2xl text-white/80 max-w-2xl mb-10 leading-relaxed"
+            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
             data-i18n="h1-d"
+          >
+            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+          </p>
+          <p
+            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+            data-i18n="h2-d"
+          >
+            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+          </p>
+          <p
+            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+            data-i18n="h3-d"
           >
             نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
             بخبرة تزيد عن 25 عاماً في المحافل الدولية.
@@ -221,7 +254,7 @@
             <div
               class="bg-white p-8 rounded-xl shadow-xl text-center border-b-4 border-gold"
             >
-              <h3 class="text-3xl font-black text-navy mb-1">1.5k+</h3>
+              <h3 class="text-3xl font-black text-navy mb-1">10+</h3>
               <p class="text-gold text-xs font-bold uppercase" data-i18n="st-1">
                 قضية ناجحة
               </p>
@@ -229,7 +262,7 @@
             <div
               class="bg-white p-8 rounded-xl shadow-xl text-center border-b-4 border-gold"
             >
-              <h3 class="text-3xl font-black text-navy mb-1">25+</h3>
+              <h3 class="text-3xl font-black text-navy mb-1">1,500+</h3>
               <p class="text-gold text-xs font-bold uppercase" data-i18n="st-2">
                 سنة خبرة
               </p>
@@ -237,7 +270,7 @@
             <div
               class="bg-white p-8 rounded-xl shadow-xl text-center border-b-4 border-gold"
             >
-              <h3 class="text-3xl font-black text-navy mb-1">100%</h3>
+              <h3 class="text-3xl font-black text-navy mb-1">100+</h3>
               <p class="text-gold text-xs font-bold uppercase" data-i18n="st-4">
                 سرية تامة
               </p>
@@ -245,7 +278,7 @@
             <div
               class="bg-white p-8 rounded-xl shadow-xl text-center border-b-4 border-gold"
             >
-              <h3 class="text-3xl font-black text-navy mb-1">30+</h3>
+              <h3 class="text-3xl font-black text-navy mb-1">24/7</h3>
               <p class="text-gold text-xs font-bold uppercase" data-i18n="st-3">
                 استشاري خبير
               </p>
@@ -253,6 +286,41 @@
           </div>
         </div>
       </section>
+
+      <!-- Clients Section (شركاء النجاح) -->
+<section class="py-16 bg-white border-t border-b border-gray-100 overflow-hidden">
+  <div class="max-w-7xl mx-auto text-center mb-10 px-6">
+    <h2 class="text-3xl font-bold text-[#001f3f] serif-title mb-4" data-i18n="sponsors-title">
+      أحد عملائنا شركاء النجاح
+    </h2>
+    <div class="w-24 h-1 bg-[#d4af37] mx-auto"></div>
+  </div>
+
+  <!-- شريط اللوجوهات المتنقل -->
+  <div class="relative w-full flex overflow-x-hidden">
+    <!-- المجموعة الأولى -->
+    <div class="animate-marquee flex whitespace-nowrap items-center gap-16 min-w-full justify-around pr-16">
+      <img src="./img/etm.png" alt="Client 1" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/findo.png" alt="Client 2" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/mnb.png" alt="Client 3" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/safty.png" alt="Client 4" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/sharka.png" alt="Client 5" class="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/shemy.png" alt="Client 6" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/star.png" alt="Client 7" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+    </div>
+
+    <!-- المجموعة الثانية مكررة عشان الشريط يفضل يلف بدون تقطيع -->
+    <div class="absolute top-0 animate-marquee2 flex whitespace-nowrap items-center gap-16 min-w-full justify-around pr-16">
+      <img src="./img/etm.png" alt="Client 1" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/findo.png" alt="Client 2" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/mnb.png" alt="Client 3" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/safty.png" alt="Client 4" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/sharka.png" alt="Client 5" class="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/shemy.png" alt="Client 6" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+      <img src="./img/star.png" alt="Client 7" class="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+    </div>
+  </div>
+</section>
     </main>
 
     <footer

@@ -8,19 +8,23 @@ const translations = {
     "m-team": "فريق العمل",
     "m-contact": "اتصل بنا",
     "m-Areas": "مجالات الممارسة",
-    "h1-t": "سيادة القانون.. أمان لمستقبلكم",
+    "h1-t": "شريككم القانوني الاستراتيجي في مصر",
     "h1-d":
-      "نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي بخبرة تزيد عن 25 عاماً.",
-    "h2-t": "حماية قانونية متكاملة للشركات",
+      "نقدم الاستشارات القانونية للشركات والمستثمرين ورواد الأعمال والشركات متعددة الجنسيات فيما يتعلق بأهم شؤونهم القانونية والتجارية.",
     "h2-d":
-      "نرافق نمو أعمالكم بخطوات قانونية ثابتة، موفرين بيئة آمنة لاستثماراتكم.",
+      "بدءًا من تأسيس الشركات والحوكمة المؤسسية وصولاً إلى المنازعات المعقدة والقضايا البحرية، يقدم فريقنا حلولاً قانونية عملية تهدف إلى حماية الأعمال ودعم النمو المستدام.",
+    "h3-d": "استكشف خدماتنا",
+
+    //   "h2-t": "حماية قانونية متكاملة للشركات",
+    // "h2-d":
+    //   "نرافق نمو أعمالكم بخطوات قانونية ثابتة، موفرين بيئة آمنة لاستثماراتكم.",
     "btn-consult": "احجز استشارة فورية",
-    "h4-home-title": "تأسس 1995",
+    "h4-home-title": "تأسس 2016",
     "a-title": "تاريخ من التميز والنزاهة",
-    "st-1": "قضية ناجحة",
-    "st-2": "سنة خبرة",
-    "st-3": " استشاري خبير",
-    "st-4": "سرية تامة",
+    "st-1": "سنة من الخبرات القانونية المتراكمة",
+    "st-2": "ملف وقضية ومعاملة قانونية ناجحة",
+    "st-3": " عميل من الشركات والمؤسسات والاشخاص الطبيعية",
+    "st-4": "دعم قانوني واستجابة مستمرة لاحتياجات عملائنا",
     "home-p1":
       "تأسس مكتب النخبة للمحاماة ليكون منارة للعدالة في المنطقة، حيث نجمع بين الأصالة القانونية والحلول العصرية المبتكرة.",
     "a-p1":
@@ -50,12 +54,24 @@ const translations = {
     "f-email": "البريد الإلكتروني",
     "f-msg": "تفاصيل الاستشارة",
     "footer-copy": "جميع الحقوق محفوظة © 2026 - مؤمن أحمد.",
-    "area-criminal-t": "القانون الجنائي",
-    "area-click-more": "اضغط لمعرفة التفاصيل والتمثيل القانوني",
-    "area-maritime-t": "القانون البحري",
-    "area-maritime-d": "استشارات متخصصة في الشحن والتأمين البحري",
-    "area-corporate-t": "قانون الشركات",
-    "area-corporate-d": "دعم قانوني كامل للمستثمرين والشركات الدولية",
+    "area-criminal-t": "الشركات والتجارة",
+    "area-click-more":
+      "تقديم الاستشارات القانونية المتعلقة بتأسيس الشركات، والحوكمة، وإعادة الهيكلة، والعمليات والمعاملات التجارية",
+    "area-maritime-t": "الاستثمار الأجنبي ودخول الأسواق",
+    "area-maritime-d":
+      "دعم المستثمرين المحليين والأجانب في تأسيس أعمالهم والتوسع داخل السوق المصري",
+    "area-corporate-t": "القانون البحري والشحن",
+    "area-corporate-d":
+      "تقديم الخدمات القانونية المتعلقة بمنازعات الشحن، والتأمين البحري، ومطالبات البضائع، والدعاوى البحرية",
+    "Dispute-Resolution-t": "تسوية المنازعات",
+    "Dispute-Resolution-d":
+      "تمثيل العملاء في المنازعات التجارية المعقدة، والتحكيم، وإجراءات تنفيذ الأحكام",
+    "Employment-and-Labour-t": "عالقات العمل والعمال",
+    "Employment-and-Labour-d":
+      "تقديم حلول قانونية عملية فيما يتعلق بعقود العمل، والسياسات الداخلية، والمنازعات العمالية",
+    "General-Counsel-Services-t": "خدمات اإلدارة القانونية للشركات",
+    "General-Counsel-Services-d":
+      "العمل كإدارة قانونية خارجية للشركات وتقديم الدعم القانوني المستمر لأعمالها",
     "read-more": "اقرأ المزيد",
     "det-about-t": "عن التخصص",
     "det-about-d":
@@ -109,15 +125,19 @@ const translations = {
     val6_title: "حلول مخصصة",
     val6_desc:
       "كل قضية لها طبيعتها الخاصة، لذا نصمم استراتيجيتنا لتناسب احتياجاتك بدقة.",
-    about_title: "من نحن",
-    about_intro_quote:
-      "نحن فريق من المحامين المتخصصين في مختلف فروع القانون، ونعمل بجدية لضمان أفضل النتائج لموكلينا.",
+    about_title: "عن المكتب",
+    about_intro_quote: "التميز. النزاهة. الفهم العميق لألعمال",
     about_p1:
-      "مع أكثر من 25 عاماً من الخبرة في الإسكندرية، أصبح مكتبنا اسماً رائداً في صناعة القانون في المنطقة.  نحن نفخر بتاريخنا الحافل بالنجاحات والتزامنا الثابت بتقديم خدمات قانونية عالية الجودة لعملائنا في جميع أنحاء مصر وخارجها.",
+      "مكتب طاهر وهاني للمحاماة والاستشارات القانونية هو مكتب قانوني مصري تأسس سنة 2016 متخصص في تقديم الخدمات القانونية للشركات والمستثمرين والمنشآت التجارية العاملة داخل مصر وخارجها",
+    about_p2:
+      "يجمع فريقنا بين الخبرة القانونية والفهم العميق لبيئة الأعمال، مما يمكننا من تقديم استشارات قانونية استراتيجية تساعد عملاءنا على التعامل مع البيئات القانونية والتنظيمية المعقدة بثقة وكفاءة",
+    about_p3:
+      "ونلتزم ببناء علاقات مهنية طويلة الأمد مع عملائنا تقوم على الثقة وسرعة الاستجابة وتقديم خدمات قانونية استثنائية.",
     contact_info: "بيانات التواصل",
     postal_code: "الرمز البريدي",
     phone_number: "رقم الهاتف",
     landline: "الهاتف الأرضي",
+    "sponsors-title": "أحد عملائنا شركاء النجاح",
   },
   en: {
     logo: "TAHER & HANY",
@@ -128,19 +148,22 @@ const translations = {
     "m-team": "Our Team",
     "m-contact": "Contact Us",
     "m-Areas": "Areas of Practice",
-    "h1-t": "Rule of Law, Secure Future",
+    "h1-t": "Your Strategic Legal Partner in Egypt",
     "h1-d":
-      "We provide our clients with the best legal advice and representation with over 25 years of experience.",
+      "We advise businesses, investors, entrepreneurs and multinational companies on their most important legal and commercial matters. ",
+    "h2-d":
+      "From company formation and corporate governance to complex disputes and maritime matters, our team delivers practical legal solutions designed to protect businesses and support sustainable growth.",
+    "h3-d": "Explore Our Services",
     "h2-t": "Full Legal Protection for Corporations",
     "h2-d":
       "We accompany your business growth with firm legal steps, ensuring a safe environment for your investments.",
     "btn-consult": "Book Consultation",
-    "h4-home-title": "Established 1995",
+    "h4-home-title": "Established 2016",
     "a-title": "History of Excellence & Integrity",
-    "st-1": "Successful Cases",
-    "st-2": "Years Experience",
-    "st-3": " Expert Consultants",
-    "st-4": "Confidentiality",
+    "st-1": "Years of Combined Experience",
+    "st-2": "Matters Handled Successfully",
+    "st-3": " Clients",
+    "st-4": "Client Support",
     "home-p1":
       "Elite Law Firm was founded to be a legal lighthouse in the region, combining legal tradition with modern innovative solutions.",
     "a-p1":
@@ -171,14 +194,24 @@ const translations = {
     "f-email": "Email Address",
     "f-msg": "Consultation Details",
     "footer-copy": "Copy Right © 2026 - All Reserved By Mo'men Ahmed.",
-    "area-criminal-t": "Criminal Law",
-    "area-click-more": "Click for details and legal representation",
-    "area-maritime-t": "Maritime Law",
+    "area-criminal-t": "Corporate & Commercial",
+    "area-click-more":
+      "Advising businesses on company formation, governance, restructuring, and commercial transactions",
+    "area-maritime-t": "Foreign Investment & Market Entry",
     "area-maritime-d":
-      "Specialized consultancy in shipping and marine insurance",
-    "area-corporate-t": "Corporate Law",
+      "Supporting local and international investors in establishing and expanding their businesses in Egypt",
+    "area-corporate-t": "Maritime & Shipping",
     "area-corporate-d":
-      "Full legal support for investors and international firms",
+      "Handling shipping disputes, marine insurance matters, cargo claims, and maritime litigation",
+    "Dispute-Resolution-t": "Dispute Resolution",
+    "Dispute-Resolution-d":
+      "Representing clients in complex commercial litigation, arbitration, and enforcement proceedings",
+    "Employment-and-Labour-t": "Employment & Labour",
+    "Employment-and-Labour-d":
+      "Providing practical solutions for employment contracts, workplace policies, and labour disputes",
+    "General-Counsel-Services-t": "General Counsel Services",
+    "General-Counsel-Services-d":
+      "Acting as an outsourced legal department for companies requiring ongoing legal support",
     "read-more": "Read More",
     "det-about-t": "ABOUT PRACTICE",
     "det-about-d":
@@ -233,15 +266,20 @@ const translations = {
     val6_title: "Tailored Solutions",
     val6_desc:
       "Each case is unique; we design strategies that fit your specific needs.",
-    about_title: "About Us",
-    about_intro_quote:
-      "We are a team of lawyers specializing in various branches of law, working diligently to ensure the best outcomes for our clients.",
+    about_title: "ABOUT THE FIRM",
+    about_intro_quote: "Excellence. Integrity. Commercial Insight",
     about_p1:
-      "With over 25 years of experience in Alexandria, our firm has established itself as a leading name in the legal industry.",
+      "TAHER & HANY Law Firm is an Egyptian business law firm established in 2016 providing legal services to corporations, investors, and commercial enterprises operating in Egypt and across the region",
+
+    about_p2:
+      "Our lawyers combine legal expertise with a deep understanding of business realities, enabling us to provide strategic advice that helps clients navigate complex legal and regulatory environments",
+    about_p3:
+      "We are committed to building long-term relationships based on trust, responsiveness, and exceptional service",
     contact_info: "Contact Information",
     postal_code: "Postal Code",
     phone_number: "Phone Number",
     landline: "Landline",
+    "sponsors-title": "One Of Our Clients A Partner In Success",
   },
 };
 
@@ -359,4 +397,31 @@ window.toggleReadMore = function (btn) {
     icon.style.transform = "rotate(0deg)";
     btnText.textContent = currentLang === "ar" ? "اقرأ المزيد" : "Read More";
   }
+
+  // dah Carousel bta3 sponsers
+  // ضبط اتجاه حركة شريط شركاء النجاح ديناميكيًا بناءً على لغة الموقع
+  function adjustMarqueeDirection() {
+    const marquees = document.querySelectorAll(
+      ".animate-marquee, .animate-marquee2",
+    );
+
+    marquees.forEach((marquee) => {
+      // لو الموقع عربي خلي الحركة متناسقة مع الـ RTL، ولو إنجليزي يعكسها
+      if (document.documentElement.dir === "rtl") {
+        marquee.style.animationDirection = "normal";
+      } else {
+        marquee.style.animationDirection = "reverse";
+      }
+    });
+  }
+
+  // استدعي الدالة أول ما الصفحة تفتح
+  adjustMarqueeDirection();
+
+  // وخلي الدالة تشتغل برضه أول ما اليوزر يغير اللغة من الزرار
+  const originalToggleLanguage = window.toggleLanguage;
+  window.toggleLanguage = function () {
+    originalToggleLanguage();
+    adjustMarqueeDirection();
+  };
 };
