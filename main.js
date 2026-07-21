@@ -72,6 +72,9 @@ const translations = {
     "General-Counsel-Services-t": "خدمات اإلدارة القانونية للشركات",
     "General-Counsel-Services-d":
       "العمل كإدارة قانونية خارجية للشركات وتقديم الدعم القانوني المستمر لأعمالها",
+    "Our-Clients-Success-Partners-t": "عملائنا وشركاء النجاح",
+    "Our-Clients-Success-Partners-more":
+      "صور للعلامات التجارية و شعار شركائنا وعملائنا",
     "read-more": "اقرأ المزيد",
     "det-about-t": "عن التخصص",
     "det-about-d":
@@ -212,6 +215,9 @@ const translations = {
     "General-Counsel-Services-t": "General Counsel Services",
     "General-Counsel-Services-d":
       "Acting as an outsourced legal department for companies requiring ongoing legal support",
+    "Our-Clients-Success-Partners-t": "Our Clients & Success Partners",
+    "Our-Clients-Success-Partners-more":
+      "Images of our clients' and partners' brands and logos",
     "read-more": "Read More",
     "det-about-t": "ABOUT PRACTICE",
     "det-about-d":
