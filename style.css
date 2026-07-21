@@ -183,6 +183,7 @@ html[lang="en"] h1[data-i18n="logo"] {
 }
 
 /* كود حركة شريط الشركات المتنقل دائمًا */
+/* كود الأنيميشن الصحيح المتوافق تماماً مع الـ RTL ومنع التداخل */
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -195,24 +196,30 @@ html[lang="en"] h1[data-i18n="logo"] {
 
 @keyframes marquee2 {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
 
   100% {
+    transform: translateX(100%);
+  }
+}
+
+/* كود الحركة الثابت ناحية الشمال */
+@keyframes marquee {
+  0% {
     transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }
 
 .animate-marquee {
-  animation: marquee 25s linear infinite;
+  animation: marquee 25s linear infinite !important;
 }
 
-.animate-marquee2 {
-  animation: marquee2 25s linear infinite;
-}
-
-/* يقف الشريط مؤقتاً عند مرور الماوس عليه لشكل احترافي */
-.overflow-x-hidden:hover .animate-marquee,
-.overflow-x-hidden:hover .animate-marquee2 {
+/* إيقاف الحركة عند تحريك الماوس */
+.overflow-x-hidden:hover .animate-marquee {
   animation-play-state: paused;
 }

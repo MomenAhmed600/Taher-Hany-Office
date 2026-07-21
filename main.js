@@ -399,29 +399,25 @@ window.toggleReadMore = function (btn) {
   }
 
   // dah Carousel bta3 sponsers
-  // ضبط اتجاه حركة شريط شركاء النجاح ديناميكيًا بناءً على لغة الموقع
   function adjustMarqueeDirection() {
-    const marquees = document.querySelectorAll(
-      ".animate-marquee, .animate-marquee2",
-    );
+    const marquees = document.querySelectorAll(".animate-marquee");
 
     marquees.forEach((marquee) => {
-      // لو الموقع عربي خلي الحركة متناسقة مع الـ RTL، ولو إنجليزي يعكسها
       if (document.documentElement.dir === "rtl") {
-        marquee.style.animationDirection = "normal";
-      } else {
         marquee.style.animationDirection = "reverse";
+      } else {
+        marquee.style.animationDirection = "normal";
       }
     });
   }
 
-  // استدعي الدالة أول ما الصفحة تفتح
   adjustMarqueeDirection();
 
-  // وخلي الدالة تشتغل برضه أول ما اليوزر يغير اللغة من الزرار
   const originalToggleLanguage = window.toggleLanguage;
-  window.toggleLanguage = function () {
-    originalToggleLanguage();
-    adjustMarqueeDirection();
-  };
+  if (typeof originalToggleLanguage === "function") {
+    window.toggleLanguage = function () {
+      originalToggleLanguage();
+      adjustMarqueeDirection();
+    };
+  }
 };
