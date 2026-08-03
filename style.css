@@ -184,7 +184,7 @@ html[lang="en"] h1[data-i18n="logo"] {
 
 /* كود حركة شريط الشركات المتنقل دائمًا */
 /* كود الأنيميشن الصحيح المتوافق تماماً مع الـ RTL ومنع التداخل */
-@keyframes marquee {
+/* @keyframes marquee {
   0% {
     transform: translateX(0%);
   }
@@ -202,7 +202,7 @@ html[lang="en"] h1[data-i18n="logo"] {
   100% {
     transform: translateX(100%);
   }
-}
+} */
 
 /* كود الحركة الثابت ناحية الشمال */
 @keyframes marquee {

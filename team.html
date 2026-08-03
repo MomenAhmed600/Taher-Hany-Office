@@ -87,20 +87,33 @@
           <button
             onclick="toggleLanguage()"
             id="lang-btn"
-            class="bg-[#001f3f] text-white px-3 py-2 rounded-md text-md font-semibold hover:bg-white hover:text-[#001f3f] border-2 border-[#001f3f] transition-all duration-300"
+            class="w-12 h-13 rounded-full overflow-hidden border-2 border-[#001f3f] shadow-md hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0 shrink-0"
+            title="Change Language / تغيير اللغة"
           >
-            English
+            <!-- سيتم عرض العلم هنا عن طريق الجافاسكريبت -->
           </button>
         </div>
-        <button
-          onclick="toggleMobileMenu()"
-          class="lg:hidden text-[#001f3f] text-2xl"
-        >
-          <i class="fas fa-bars-staggered"></i>
-        </button>
+
+        <!-- زر الموبايل + علم اللغة للموبايل -->
+        <div class="flex items-center gap-3 lg:hidden">
+          <button
+            onclick="toggleLanguage()"
+            class="lang-btn-mobile w-12 h-10 rounded-full overflow-hidden border-2 border-[#001f3f] shadow-md hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0 shrink-0"
+            title="Change Language / تغيير اللغة"
+          >
+            <!-- علم الموبايل -->
+          </button>
+
+          <button
+            onclick="toggleMobileMenu()"
+            class="text-[#001f3f] text-2xl p-1 focus:outline-none"
+          >
+            <i class="fas fa-bars-staggered"></i>
+          </button>
+        </div>
       </div>
 
-       <div
+      <div
         id="mobile-menu"
         class="hidden lg:hidden bg-white border-t border-gold/20 flex flex-col p-6 gap-4 shadow-2xl"
       >
@@ -128,15 +141,6 @@
           data-i18n="m-contact"
           >اتصل بنا</a
         >
-        <button
-          onclick="
-            toggleLanguage();
-            toggleMobileMenu();
-          "
-          class="bg-[#001f3f] text-white py-2 rounded mt-2"
-        >
-          English / العربية
-        </button>
       </div>
     </nav>
 

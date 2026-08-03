@@ -87,17 +87,30 @@
           <button
             onclick="toggleLanguage()"
             id="lang-btn"
-            class="bg-[#001f3f] text-white px-3 py-2 rounded-md text-md font-semibold hover:bg-white hover:text-[#001f3f] border-2 border-[#001f3f] transition-all duration-300"
+            class="w-12 h-13 rounded-full overflow-hidden border-2 border-[#001f3f] shadow-md hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0 shrink-0"
+            title="Change Language / تغيير اللغة"
           >
-            English
+            <!-- سيتم عرض العلم هنا عن طريق الجافاسكريبت -->
           </button>
         </div>
-        <button
-          onclick="toggleMobileMenu()"
-          class="lg:hidden text-[#001f3f] text-2xl"
-        >
-          <i class="fas fa-bars-staggered"></i>
-        </button>
+
+        <!-- زر الموبايل + علم اللغة للموبايل -->
+        <div class="flex items-center gap-3 lg:hidden">
+          <button
+            onclick="toggleLanguage()"
+            class="lang-btn-mobile w-10 h-10 rounded-full overflow-hidden border-2 border-[#001f3f] shadow-md hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0 shrink-0"
+            title="Change Language / تغيير اللغة"
+          >
+            <!-- علم الموبايل -->
+          </button>
+
+          <button
+            onclick="toggleMobileMenu()"
+            class="text-[#001f3f] text-2xl p-1 focus:outline-none"
+          >
+            <i class="fas fa-bars-staggered"></i>
+          </button>
+        </div>
       </div>
 
       <div
@@ -128,105 +141,183 @@
           data-i18n="m-contact"
           >اتصل بنا</a
         >
-        <button
+        <!-- <button
           onclick="
             toggleLanguage();
             toggleMobileMenu();
           "
-          class="bg-[#001f3f] text-white py-2 rounded mt-2"
+          class="w-full bg-[#001f3f] text-white py-2.5 px-4 rounded-lg flex items-center justify-center gap-3 font-semibold mt-2 hover:bg-[#001f3f]/90 transition-colors"
         >
-          English / العربية
-        </button>
+          <span class="lang-btn-mobile w-7 h-7 rounded-full overflow-hidden inline-block border border-white shrink-0"></span>
+          <span class="mobile-lang-text">English / العربية</span>
+        </button> -->
       </div>
     </nav>
 
     <main class="pt-20">
       <section class="relative h-[75vh] overflow-hidden">
-  <div id="hero-carousel">
-    <!-- السلايد الأول -->
-    <div class="carousel-item active relative h-[75vh]">
-      <img
-        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
-        class="w-full h-full object-cover"
-      />
+        <div id="hero-carousel">
+          <!-- السلايد الأول -->
+          <div class="carousel-item active relative h-[75vh]">
+            <img
+              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
+              class="w-full h-full object-cover"
+            />
 
-      <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
-        <!-- أضفنا flex flex-col items-center هنا للتأكيد على التوسيط الدقيق -->
-        <div class="max-w-7xl mx-auto w-full text-white px-6 flex flex-col items-center text-center">
-          <h2
-            class="text-[#d4af37] text-2xl md:text-6xl font-black mb-7 serif-title leading-tight"
-            data-i18n="h1-t"
-          >
-            سيادة القانون.. أمان لمستقبلكم
-          </h2>
-          <!-- تم تعديل الـ margin هنا إلى mx-auto -->
-          <p
-            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
-            data-i18n="h1-d"
-          >
-            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
-            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
-          </p>
-          <p
-            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
-            data-i18n="h2-d"
-          >
-            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
-            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
-          </p>
-          <p
-            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
-            data-i18n="h3-d"
-          >
-            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
-            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
-          </p>
+            <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
+              <div class="max-w-7xl mx-auto w-full text-white px-6 flex flex-col items-center text-center">
+                <h2
+                  class="text-[#d4af37] text-2xl md:text-6xl font-black mb-7 serif-title leading-tight"
+                  data-i18n="h1-t"
+                >
+                  سيادة القانون.. أمان لمستقبلكم
+                </h2>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h1-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h2-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h3-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- السلايد الثاني -->
+          <div class="carousel-item relative h-[75vh]">
+            <img
+              src="./img/main1.jfif"
+              class="w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
+              <div class="max-w-7xl mx-auto w-full text-white px-6 flex flex-col items-center text-center">
+                <h2
+                  class="text-[#d4af37] text-2xl md:text-6xl font-black mb-6 serif-title leading-tight"
+                  data-i18n="h1-t"
+                >
+                  سيادة القانون.. أمان لمستقبلكم
+                </h2>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h1-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h2-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h3-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+              </div>
+            </div>
+          </div>
+
+           <!-- السلايد الثالث -->
+          <div class="carousel-item relative h-[75vh]">
+            <img
+              src="./img/main2.jfif"
+              class="w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
+              <div class="max-w-7xl mx-auto w-full text-white px-6 flex flex-col items-center text-center">
+                <h2
+                  class="text-[#d4af37] text-2xl md:text-6xl font-black mb-6 serif-title leading-tight"
+                  data-i18n="h1-t"
+                >
+                  سيادة القانون.. أمان لمستقبلكم
+                </h2>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h1-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h2-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h3-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+              </div>
+            </div>
+          </div>
+
+           <!-- السلايد الرابع -->
+          <div class="carousel-item relative h-[75vh]">
+            <img
+              src="./img/main3.jfif"
+              class="w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
+              <div class="max-w-7xl mx-auto w-full text-white px-6 flex flex-col items-center text-center">
+                <h2
+                  class="text-[#d4af37] text-2xl md:text-6xl font-black mb-6 serif-title leading-tight"
+                  data-i18n="h1-t"
+                >
+                  سيادة القانون.. أمان لمستقبلكم
+                </h2>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h1-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h2-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+                <p
+                  class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
+                  data-i18n="h3-d"
+                >
+                  نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
+                  بخبرة تزيد عن 25 عاماً في المحافل الدولية.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- السلايد الثاني -->
-    <div class="carousel-item relative h-[75vh]">
-      <img
-        src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=2000"
-        class="w-full h-full object-cover"
-      />
-
-      <div class="absolute inset-0 bg-[#001f3f]/70 flex items-center justify-center">
-        <!-- تم تحويل التكست كله لـ center هنا برضه وتعديل الـ md:text-start القديمة -->
-        <div class="max-w-7xl mx-auto w-full text-white px-6 flex flex-col items-center text-center">
-          <h2
-            class="text-[#d4af37] text-2xl md:text-6xl font-black mb-6 serif-title leading-tight"
-            data-i18n="h1-t"
-          >
-            سيادة القانون.. أمان لمستقبلكم
-          </h2>
-          <p
-            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
-            data-i18n="h1-d"
-          >
-            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
-            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
-          </p>
-          <p
-            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
-            data-i18n="h2-d"
-          >
-            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
-            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
-          </p>
-          <p
-            class="mx-auto text-xxl md:text-2xl text-white/80 max-w-3xl mb-10 leading-relaxed"
-            data-i18n="h3-d"
-          >
-            نحن نوفر لعملائنا أفضل الاستشارات القانونية والتمثيل القضائي
-            بخبرة تزيد عن 25 عاماً في المحافل الدولية.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <!-- Home Intro Section -->
       <section class="py-24 px-6 max-w-7xl mx-auto">
@@ -288,64 +379,51 @@
       </section>
 
       <!-- Clients Section (شركاء النجاح) -->
-<!-- Clients Section (شركاء النجاح) -->
-<section class="py-10 md:py-16 bg-white border-t border-b border-gray-100 overflow-hidden">
-  <div class="max-w-7xl mx-auto text-center mb-8 md:mb-12 px-6">
-    <h2 class="text-2xl md:text-3xl font-bold text-[#001f3f] serif-title mb-4" data-i18n="sponsors-title">
-      أحد عملائنا شركاء النجاح
-    </h2>
-    <div class="w-20 md:w-24 h-1 bg-[#d4af37] mx-auto"></div>
-  </div>
+      <section class="py-10 md:py-16 bg-white border-t border-b border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center mb-8 md:mb-12 px-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#001f3f] serif-title mb-4" data-i18n="sponsors-title">
+            أحد عملائنا شركاء النجاح
+          </h2>
+          <div class="w-20 md:w-24 h-1 bg-[#d4af37] mx-auto"></div>
+        </div>
 
-  <!-- شريط اللوجوهات المتنقل (ضفنا dir="ltr" هنا) -->
-  <div class="relative w-full flex overflow-x-hidden" dir="ltr">
-    
-    <!-- المجموعة الأولى -->
-    <div class="animate-marquee flex whitespace-nowrap items-center justify-start gap-12 md:gap-20 w-max pr-12 md:pr-20 shrink-0">
-      <img src="./img/etm.png" alt="Client 1" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/findo.png" alt="Client 2" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/mnb.png" alt="Client 3" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/safty.png" alt="Client 4" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/sharka.png" alt="Client 5" class="h-10 md:h-16 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/shemy.png" alt="Client 6" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/star.png" alt="Client 7" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-    </div>
+        <!-- شريط اللوجوهات المتنقل -->
+        <div class="relative w-full flex overflow-x-hidden" dir="ltr">
+          <!-- المجموعة الأولى -->
+          <div class="animate-marquee flex whitespace-nowrap items-center justify-start gap-12 md:gap-20 w-max pr-12 md:pr-20 shrink-0">
+            <img src="./img/etm.png" alt="Client 1" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/findo.png" alt="Client 2" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/mnb.png" alt="Client 3" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/safty.png" alt="Client 4" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/sharka.png" alt="Client 5" class="h-10 md:h-16 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/shemy.png" alt="Client 6" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/star.png" alt="Client 7" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+          </div>
 
-    <!-- المجموعة الثانية -->
-    <div class="animate-marquee flex whitespace-nowrap items-center justify-start gap-12 md:gap-20 w-max pr-12 md:pr-20 shrink-0">
-      <img src="./img/etm.png" alt="Client 1" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/findo.png" alt="Client 2" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/mnb.png" alt="Client 3" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/safty.png" alt="Client 4" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/sharka.png" alt="Client 5" class="h-10 md:h-16 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/shemy.png" alt="Client 6" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-      <img src="./img/star.png" alt="Client 7" class="h-12 md:h-18 w-auto object-contain shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-    </div>
-
-  </div>
-</section>
+          <!-- المجموعة الثانية -->
+          <div class="animate-marquee flex whitespace-nowrap items-center justify-start gap-12 md:gap-20 w-max pr-12 md:pr-20 shrink-0">
+            <img src="./img/etm.png" alt="Client 1" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/findo.png" alt="Client 2" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/mnb.png" alt="Client 3" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/safty.png" alt="Client 4" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/sharka.png" alt="Client 5" class="h-10 md:h-16 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/shemy.png" alt="Client 6" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+            <img src="./img/star.png" alt="Client 7" class="h-12 md:h-18 w-auto object-contain shrink-0 hover:scale-125 transition-transform duration-300 cursor-pointer" />
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer
-      class="bg-[#001f3f] text-white shadow-[0_-3px_10px_rgba(0,0,0,0.2)]"
-    >
-      <div
-        class="max-w-7xl mx-auto px-5 pt-10 pb-16 grid grid-cols-2 md:grid-cols-4 gap-10"
-      >
+    <footer class="bg-[#001f3f] text-white shadow-[0_-3px_10px_rgba(0,0,0,0.2)]">
+      <div class="max-w-7xl mx-auto px-5 pt-10 pb-16 grid grid-cols-2 md:grid-cols-4 gap-10">
         <div class="space-y-4">
           <div class="flex items-center gap-3">
             <img src="./img/logo-foot.png" alt="Logo" class="h-10 w-auto" />
             <div class="leading-none">
-              <h1
-                class="text-[#fff] text-xl font-extrabold uppercase tracking-tight"
-                data-i18n="logo"
-              >
+              <h1 class="text-[#fff] text-xl font-extrabold uppercase tracking-tight" data-i18n="logo">
                 طاهر&هاني
               </h1>
-              <p
-                class="text-gold text-[9px] uppercase tracking-[0.2em] font-bold mt-1"
-                data-i18n="logo-2"
-              >
+              <p class="text-gold text-[9px] uppercase tracking-[0.2em] font-bold mt-1" data-i18n="logo-2">
                 المكتب القانوني
               </p>
             </div>
@@ -359,7 +437,7 @@
           <h5 class="text-xl font-semibold mb-4" data-i18n="f-links-title">
             Quick Links
           </h5>
-          <ul class="space-y-2 ">
+          <ul class="space-y-2">
             <li><a href="areas.html" data-i18n="m-Areas" class="hover:text-blue-300 transition-colors">المجالات</a></li>
             <li><a href="services.html" data-i18n="m-services" class="hover:text-blue-300 transition-colors">خدماتنا</a></li>
             <li><a href="team.html" data-i18n="m-team" class="hover:text-blue-300 transition-colors">الفريق</a></li>
@@ -427,10 +505,7 @@
         </div>
 
         <div>
-          <h5
-            class="text-xl font-semibold mb-4 uppercase"
-            data-i18n="f-location-title"
-          >
+          <h5 class="text-xl font-semibold mb-4 uppercase" data-i18n="f-location-title">
             Alexandria
           </h5>
           <ul class="space-y-2">
@@ -447,12 +522,9 @@
         </div>
       </div>
 
-      <div
-        class="bg-black/30 border-t border-white/10 py-4 text-white/80 text-sm"
-      >
+      <div class="bg-black/30 border-t border-white/10 py-4 text-white/80 text-sm">
         <div class="flex items-center justify-center gap-2" dir="ltr">
           <span>© Copy Right 2026 - All Reserved By</span>
-
           <a
             href="https://www.momenahmed.net"
             target="_blank"

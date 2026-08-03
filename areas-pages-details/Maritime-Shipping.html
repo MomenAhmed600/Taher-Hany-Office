@@ -26,23 +26,21 @@
       class="fixed w-full z-[1000] py-4 bg-white border-b-2 border-[#001f3f] shadow-lg"
     >
       <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="../index.html" class="flex items-center gap-3">
-          <div class="flex items-center gap-3">
-            <img src="../img/logo.png" alt="Logo" class="h-[60px] w-auto" />
-            <div class="leading-none">
-              <h1
-                class="text-[#0f172a] text-xl font-extrabold uppercase tracking-tight"
-                data-i18n="logo"
-              >
-                طاهروهاني
-              </h1>
-              <p
-                class="text-gold text-[9px] uppercase tracking-[0.2em] font-bold mt-1"
-                data-i18n="logo-2"
-              >
-                المكتب القانوني
-              </p>
-            </div>
+        <a href="../index.html" class="flex items-center gap-3 shrink-0">
+          <img src="../img/logo.png" alt="Logo" class="h-[50px] sm:h-[60px] w-auto shrink-0" />
+          <div class="leading-none flex flex-col justify-center min-w-[110px]">
+            <h1
+              class="text-[#0f172a] text-lg sm:text-xl font-extrabold uppercase tracking-tight whitespace-nowrap"
+              data-i18n="logo"
+            >
+              طاهروهاني
+            </h1>
+            <p
+              class="text-gold text-[8px] sm:text-[9px] uppercase tracking-[0.15em] font-bold mt-1 whitespace-nowrap"
+              data-i18n="logo-2"
+            >
+              المكتب القانوني
+            </p>
           </div>
         </a>
         <div
@@ -87,56 +85,60 @@
           <button
             onclick="toggleLanguage()"
             id="lang-btn"
-            class="bg-[#001f3f] text-white px-3 py-2 rounded-md text-md font-semibold hover:bg-white hover:text-[#001f3f] border-2 border-[#001f3f] transition-all duration-300"
+            class="w-12 h-13 rounded-full overflow-hidden border-2 border-[#001f3f] shadow-md hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0 shrink-0"
+            title="Change Language / تغيير اللغة"
           >
-            English
+            <!-- سيتم عرض العلم هنا عن طريق الجافاسكريبت -->
           </button>
         </div>
-        <button
-          onclick="toggleMobileMenu()"
-          class="lg:hidden text-[#001f3f] text-2xl"
-        >
-          <i class="fas fa-bars-staggered"></i>
-        </button>
+
+        <!-- زر الموبايل + علم اللغة للموبايل -->
+        <div class="flex items-center gap-3 lg:hidden">
+          <button
+            onclick="toggleLanguage()"
+            class="lang-btn-mobile w-12 h-10 rounded-full overflow-hidden border-2 border-[#001f3f] shadow-md hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0 shrink-0"
+            title="Change Language / تغيير اللغة"
+          >
+            <!-- علم الموبايل -->
+          </button>
+
+          <button
+            onclick="toggleMobileMenu()"
+            class="text-[#001f3f] text-2xl p-1 focus:outline-none"
+          >
+            <i class="fas fa-bars-staggered"></i>
+          </button>
+        </div>
       </div>
 
-        <div
+      <div
         id="mobile-menu"
         class="hidden lg:hidden bg-white border-t border-gold/20 flex flex-col p-6 gap-4 shadow-2xl"
       >
-        <a href="../index.html" class="text-start font-bold" data-i18n="m-home"
+        <a href="../index.html" class="text-start font-bold hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md" data-i18n="m-home"
           >الرئيسية</a
         >
-        <a href="../areas.html" class="text-start font-bold" data-i18n="m-Areas"
+        <a href="../areas.html" class="text-start font-bold hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md" data-i18n="m-Areas"
           >المجالات</a
         >
         <a
           href="../services.html"
-          class="text-start font-bold"
+          class="text-start font-bold hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
           data-i18n="m-services"
           >خدماتنا</a
         >
-        <a href="../team.html" class="text-start font-bold" data-i18n="m-team"
+        <a href="../team.html" class="text-start font-bold hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md" data-i18n="m-team"
           >فريق العمل</a
         >
-        <a href="../about.html" class="text-start font-bold" data-i18n="m-about"
+        <a href="../about.html" class="text-start font-bold hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md" data-i18n="m-about"
           >من نحن</a
         >
         <a
           href="../contact.html"
-          class="text-start font-bold"
+          class="text-start font-bold hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
           data-i18n="m-contact"
           >اتصل بنا</a
         >
-        <button
-          onclick="
-            toggleLanguage();
-            toggleMobileMenu();
-          "
-          class="bg-[#001f3f] text-white py-2 rounded mt-2"
-        >
-          English / العربية
-        </button>
       </div>
     </nav>
 
