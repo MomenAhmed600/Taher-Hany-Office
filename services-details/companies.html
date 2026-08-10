@@ -84,20 +84,32 @@
             class="hover:bg-[#001f3f] hover:text-white transition-colors px-3 py-2 rounded-md"
             >اتصل بنا</a
           >
-          <button
+           <button
             onclick="toggleLanguage()"
             id="lang-btn"
-            class="bg-[#001f3f] text-white px-3 py-2 rounded-md text-md font-semibold hover:bg-white hover:text-[#001f3f] border-2 border-[#001f3f] transition-all duration-300"
+            class="w-12 h-13 rounded-full overflow-hidden border-2 border-[#001f3f] shadow-md hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0 shrink-0"
+            title="Change Language / تغيير اللغة"
           >
-            English
+            <!-- سيتم عرض العلم هنا عن طريق الجافاسكريبت -->
           </button>
         </div>
-        <button
-          onclick="toggleMobileMenu()"
-          class="lg:hidden text-[#001f3f] text-2xl"
-        >
-          <i class="fas fa-bars-staggered"></i>
-        </button>
+
+        <!-- زر الموبايل + علم اللغة للموبايل -->
+        <div class="flex items-center gap-3 lg:hidden">
+          <button
+            onclick="toggleLanguage()"
+            class="lang-btn-mobile w-12 h-10 rounded-full overflow-hidden border-2 border-[#001f3f] shadow-md hover:scale-110 transition-transform duration-300 flex items-center justify-center p-0 shrink-0"
+            title="Change Language / تغيير اللغة"
+          >
+            <!-- علم الموبايل -->
+          </button>
+
+          <button
+            onclick="toggleMobileMenu()"
+            class="text-[#001f3f] text-2xl p-1 focus:outline-none"
+          >
+            <i class="fas fa-bars-staggered"></i>
+          </button>
       </div>
 
       <div
@@ -152,11 +164,11 @@
           <div class="text-center text-white">
             <h1
               class="text-4xl md:text-6xl font-black mb-4 serif-title"
-              data-i18n="area-criminal-t"
+              data-i18n="area-foreign-investment-t"
             >
-              القانون الجنائي
+              الشركات
             </h1>
-            <div class="w-20 h-1 bg-gold mx-auto"></div>
+
           </div>
         </div>
       </section>
@@ -171,7 +183,7 @@
                 class="absolute -inset-4 border-2 border-gold/20 rounded-xl translate-x-4 translate-y-4 -z-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"
               ></div>
               <img
-                src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1000"
+                src="/img/elsharikat.jfif"
                 class="w-full h-[300px] lg:h-[500px] object-cover rounded-xl shadow-2xl transition-all duration-500"
                 alt="Legal Image"
               />
@@ -181,48 +193,34 @@
           <div
             class="w-full lg:w-1/2 flex flex-col gap-6 order-2 lg:order-2 rtl:lg:order-1 text-start"
           >
-            <!-- <div>
-        <span
-          class="text-gold/60 text-sm font-medium tracking-[0.2em] uppercase"
-          >10/21/25</span
-        >
-      </div> -->
 
             <h1
-              class="text-4xl text-gold lg:text-6xl font-medium text-navy leading-[1.1] serif-title transition-all duration-700 ease-in-out"
-              data-i18n="det-about-t"
+              class="text-4xl text-gold lg:text-5xl font-medium text-navy leading-[1.1] serif-title transition-all duration-700 ease-in-out"
+              data-i18n="area-foreign-investment-t"
             >
-              The Evolution of Law: Professional Criminal Defense
+              الشركات
             </h1>
 
-            <p
-              class="text-slate-500 text-lg lg:text-xl leading-relaxed max-w-xl transition-all duration-700 ease-in-out"
-              data-i18n="det-about-d"
-            >
-              نقدم في مكتبنا خدمات دفاع جنائي متميزة، نجمع فيها بين الإرث
-              القانوني العريق والحلول العصرية لحماية حقوقكم وضمان تحقيق العدالة
-              الناجزة.
-            </p>
+           <p
+  class="text-[#001f3f] text-lg lg:text-xl leading-relaxed max-w-xl transition-all duration-700 ease-in-out"
+  data-i18n="area-foreign-investment-d"
+>
+  يقدم TAHER & HANY LAW FIRM خدمات متكاملة في تأسيس الشركات بكافة أشكالها القانونية، مع تقديم الاستشارات اللازمة لااختيار الهيكل القانوني الأنسب لطبيعة النشاط وأهداف المستثمرين. ويتولى فريقنا إدارة جميع إجراءات التأسيس والتسجيل والتراخيص، بما يضمن بدء النشاط وفقًا لأحكام القوانين المصرية وبأعلى درجات الكفاءة والسرعة.
+</p>
 
             <div class="pt-4 border-t border-gold/10">
-              <h3
-                class="text-navy font-bold mb-3 text-sm uppercase tracking-wider"
-                data-i18n="det-services-t"
-              >
-                خدماتنا تشمل:
-              </h3>
+             
               <ul class="space-y-2 text-slate-600 text-base">
                 <li class="flex items-center gap-2">
                   <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
-                  <span data-i18n="det-s1"
-                    >تمثيل الموكلين في قضايا الجنايات والجنح بمختلف
-                    أنواعها.</span
+                  <span data-i18n="area-foreign-investment-s1" class="text-[#304357]"
+                    >ولا يقتصر دورنا على تأسيس الشركات، بل يمتد إلى إدارة جميع التعديلات القانونية التي قد تطرأ على الشركة خلال دورة حياتها، بما يشمل زيادة أو تخفيض رأس المال، وتعديل أغراض الشركة، ونقل المقر، وافتتاح الفروع داخل مصر أو خارجها، وقيد فروع الشركات الأجنبية، وإعادة هيكلة الشركات، وعمليات الاندماج والاستحواذ، وتصفيتها، مع تمثيل العملاء أمام جميع الجهات الحكومية والهيئات المختصة حتى الانتهاء من الإجراءات بالكامل.</span
                   >
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
-                  <span data-i18n="det-s2"
-                    >تقديم الاستشارات القانونية الوقائية لتجنب المساءلة.</span
+                  <span data-i18n="area-foreign-investment-s2" class="text-[#001F3F]"
+                    >ولأن نجاح الشركات يعتمد على تكامل الجوانب القانونية والضريبية، نوفر لعملائنا منظومة متكاملة تجمع بين الإدارة القانونية والاستشارات الضريبية والمحاسبية من خلال فريق يضم محامي شركات، ومستشارين ضريبيين، ومحاسبين متخصصين، بما يضمن توافق أعمال الشركة مع المتطلبات القانونية والضريبية، ويمنح الإدارة القدرة على اتخاذ قراراتها بثقة واستقرار في مختلف مراحل نمو النشاط.</span
                   >
                 </li>
               </ul>
