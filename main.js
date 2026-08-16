@@ -80,6 +80,22 @@ const translations = {
       "تمثيل العملاء في منازعات الشحن البحري، ومطالبات البضائع، وقضايا التأمين البحري، والدعاوى الناشئة عن عقود النقل البحري",
     "det-s2":
       "بالإضافة إلى تقديم الاستشارات القانونية المتعلقة بالمسؤولية البحرية، بما يضمن حماية الحقوق وتقليل المخاطر القانونية والتجارية",
+    // srevses-page
+    "area-foreign-investment-t": "الاستثمار الأجنبي ودخول الأسواق",
+    "area-foreign-investment-d":
+      "دعم المستثمرين المحليين والأجانب في تأسيس أعمالهم والتوسع داخل السوق المصري",
+    "area-labor-t": "  علاقات العمل والعمال",
+    "area-labor-d":
+      "تقديم حلول قانونية عملية فيما يتعلق بعقود العمل، والسياسات الداخلية، والمنازعات العمالية",
+    "Corporate-Legal-t": " الإدارة القانونية للشركات",
+    "Corporate-Legal-d":
+      "تقديم الاستشارات القانونية المتعلقة بتأسيس الشركات، والحوكمة، وإعادة الهيكلة، والعمليات والمعاملات التجارية",
+    "area-companies-t": "شركات",
+    "area-companies-d":
+      "تقديم الاستشارات القانونية المتعلقة بتأسيس الشركات، والحوكمة، وإعادة الهيكلة، والعمليات والمعاملات التجارية",
+    "area-dispute-resolution-t": " تسوية المنازعات والتقاضي",
+    "area-dispute-resolution-d":
+      "تمثيل العملاء في المنازعات التجارية المعقدة، والتحكيم، وإجراءات تنفيذ الأحكام",
     "det-side-t": "هل تحتاج لاستشارة؟",
     "det-back": "لعودة لمجالات الممارسه",
     "f-brand-desc":
@@ -225,6 +241,22 @@ const translations = {
       "Representing clients in maritime shipping disputes, cargo claims, marine insurance cases, and claims arising from maritime carriage contracts.",
     "det-s2":
       "In addition to providing legal advice related to maritime liability, ensuring the protection of rights and minimizing legal and commercial risks.",
+    // srevses-page
+    "area-foreign-investment-t": "Foreign Investment & Market Entry",
+    "area-foreign-investment-d":
+      "Supporting local and international investors in establishing and expanding their businesses in Egypt",
+    "area-labor-t": " Labor employment relations",
+    "area-labor-d":
+      "Providing practical solutions for employment contracts, workplace policies, and labour disputes",
+    "Corporate-Legal-t": "Corporate Legal Management",
+    "Corporate-Legal-d":
+      "Providing legal advice related to company formation, governance, restructuring, and commercial transactions",
+    "area-companies-t": "Companies",
+    "area-companies-d":
+      "Providing legal advice related to company formation, governance, restructuring, and commercial transactions",
+    "area-dispute-resolution-t": " Dispute Resolution & Litigation",
+    "area-dispute-resolution-d":
+      "Representing clients in complex commercial litigation, arbitration, and enforcement proceedings",
     "det-side-t": "Do you need a consultation",
     "det-back": "Returning to the Areas of practice",
     "f-brand-desc":
